@@ -559,7 +559,7 @@ pub trait Agent: Sized + 'static {
     /// This method called on when a new bridge destroyed.
     fn disconnected(&mut self, _id: HandlerId) {}
 
-    /// Creates an instance of an agent.
+    /// Destroys an instance of an agent.
     fn destroy(&mut self) {}
 
     /// Represents the name of loading resorce for remote workers which
